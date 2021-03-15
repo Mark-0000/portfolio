@@ -1,0 +1,50 @@
+{% extends 'ui/base.html' %} {% load static %} {% block title %}Portfolio de
+Mark | Gallery{% endblock %} {% block content%}
+<section class="blog gallery" id="main-blog">
+    <div class="container">
+        <h2 class="title">{{ gallery.project.title }}</h2>
+
+        <div class="blog-content">
+
+            <div class="card">
+                <div class="box gal-title">
+                    <img class="project_image" height="225" src="{{ gallery.img1.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt1 }}</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img class="project_image gal-title" height="225" src="{{ gallery.img2.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt2 }}</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box gal-title">
+                    <img class="project_image" height="225" src="{{ gallery.img3.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt3 }}</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box gal-title">
+                    <img class="project_image" height="225" src="{{ gallery.img4.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt4 }}</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box gal-title">
+                    <img class="project_image" height="225" src="{{ gallery.img5.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt5 }}</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img class="project_image" height="225" src="{{ gallery.img6.url }}" alt="blog"/>
+                    <h4 class=" gal-title">{{ gallery.txt6 }}</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock %}
