@@ -37,6 +37,18 @@
 <!-- End Header -->
 {% block content%}
 {% endblock %}
+
+{% if messages %}
+{% for message in messages%}
+<div class="notif">
+                <span>
+                {{ message }}
+                </span>
+    <a href=""><span class="badge">✓</span></a>
+</div>
+{% endfor %}
+{% endif %}
+
 <!-- Start Footer -->
 <footer>
     <div class="container">
