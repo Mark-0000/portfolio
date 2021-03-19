@@ -36,7 +36,6 @@ def gallery(request, project_id):
 
 
 class Index(View):
-
     def get(self, request):
         context = {
             'projects': Project.objects.all(),

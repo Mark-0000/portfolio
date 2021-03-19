@@ -12,6 +12,11 @@ class Project(models.Model):
     def __str__(self):
         return f'{self.title} - {self.technology}'
 
+    def save(self, **kwargs):
+        super(Project, self).save(**kwargs)
+        gallery = Gallery(project=self)
+        gallery.save()
+
 
 class Gallery(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
